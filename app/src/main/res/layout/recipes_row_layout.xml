@@ -45,13 +45,36 @@
                 android:layout_marginEnd="12dp"
                 android:fontFamily="@font/courgette"
                 android:maxLines="2"
-                android:text="food Items"
+                android:text="Lorem Ipsum sssd"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@id/recipes_image_view"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:textColor="@color/darkGray"
+                app:layout_constraintEnd_toEndOf="@id/title_textView"
+                app:layout_constraintStart_toStartOf="@id/title_textView"
+                app:layout_constraintTop_toBottomOf="@id/title_textView" />
+
+            <ImageView
+                android:id="@+id/icon_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                app:layout_constraintStart_toStartOf="@id/text_description"
+                app:layout_constraintTop_toBottomOf="@id/text_description"
+                app:tint="@color/red" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
